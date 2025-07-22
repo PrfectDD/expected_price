@@ -7,7 +7,7 @@ def calc_penetrating_return(discount, payout_ratio, required_yield, market_cap, 
     """
     参数：
         discount: 折价（百分数，如80表示80%）
-        payout_ratio: 股息率（百分数，如70表示70%）
+        payout_ratio: 股息支付率（百分数，如70表示70%）
         required_yield: 要求股息率（百分数，如4表示4%）
         market_cap: 总市值（单位：亿）
         total_shares: 总股本（单位：亿）
@@ -64,7 +64,7 @@ for var in [discount_var, payout_ratio_var, required_yield_var, market_cap_var, 
 # 布局
 fields = [
     ("折价（如80表示80%）", discount_var),
-    ("股息率（如70表示70%）", payout_ratio_var),
+    ("股息支付率（如70表示70%）", payout_ratio_var),
     ("要求股息率（如4表示4%）", required_yield_var),
     ("总市值（单位：亿）", market_cap_var),
     ("总股本（单位：亿）", total_shares_var),
@@ -81,3 +81,4 @@ result_label.grid(row=len(fields), column=0, columnspan=2, pady=15)
 
 # 启动主循环
 root.mainloop()
+1
